@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+#root {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-list {
+  overflow: hidden; /* This hides overflow and prevents slides from stacking */
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Ensures the div takes the full width of the slide */
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-prev:before, 
+.slick-next:before {
+  color: black;
+  font-size: 40px;
+}
+
+.slick-prev {
+  left: 10px; /* Adjust based on your design */
+  z-index: 99999;
+}
+
+.slick-next {
+  right: 10px; /* Adjust based on your design */
+  z-index: 99999;
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust based on your design */
+  display: block;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  height: 200px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card p {
+  margin-top: 10px;
+  color: #666;
+}
